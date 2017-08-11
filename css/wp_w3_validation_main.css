@@ -1,0 +1,51 @@
+/*
+
+Styles for the wp-w3-validation plugin
+
+*/
+
+
+
+#wp-w3-validation-drop-down {
+    position: relative;
+}
+
+#wp-w3-validation-drop-down > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+#wp-w3-validation-drop-down > ul {
+    display: none;
+    list-style-position: inside;
+    padding: 5px;
+    background: #EEEEEE;
+    border: 1px solid #BBBBBB;
+}
+
+#wp-w3-validation-drop-down:hover > ul {
+    display: block;
+}
+
+#wp-w3-validation-drop-down a {
+    padding: 5px 5px 5px 0;
+}
+
+#wp-w3-validation-drop-down li {
+    display: list-item;
+}
+
+#wp-w3-validation-drop-down li.valid {
+    color: #86C31E;
+    list-style: circle inside url('/wp-content/plugins/wp-w3-validation/images/tick.png'); /*tick.gif*/
+}
+
+#wp-w3-validation-drop-down li.invalid {
+    color: #B4231C;
+    list-style: disc inside url('/wp-content/plugins/wp-w3-validation/images/cross.png'); /*cross.gif*/
+}
+
